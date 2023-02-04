@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         newsRecycler=findViewById(R.id.newsrecycle);
         searchView=findViewById(R.id.searchview);
         searchView.clearFocus();
+
 
         mAuth=FirebaseAuth.getInstance();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
